@@ -1,0 +1,31 @@
+description: Ultralytics YOLO11n model trained on /workspace/175.야생동물 활동 영상 데이터/final_dataset/data.yaml
+author: Ultralytics
+date: '2025-12-10T13:22:11.443179'
+version: 8.3.165
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: Hydropotes inermis
+  1: Sus scrofa
+  2: Ursus thibetanus
+  3: Nyctereutes procyonoides
+  4: Sciurus vulgaris
+  5: Tamias sibiricus
+  6: Capreolus pygargus
+  7: Lepus coreanus
+  8: Mustela sibirica
+  9: Ardea cinerea
+  10: Ardea alba
+args:
+  batch: 1
+  fraction: 1.0
+  half: false
+  int8: false
+  nms: false
+channels: 3

@@ -1,0 +1,31 @@
+name: animal_guard
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- [수정된 부분 1] 필수 패키지 추가 ---
+  cupertino_icons: ^1.0.8
+  flutter_vision: ^1.1.4  # YOLO AI 모델 실행용
+  image_picker: ^1.0.7    # 카메라/갤러리 사용용
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # --- [수정된 부분 2] AI 모델 및 라벨 파일 등록 ---
+  # assets 폴더에 있는 파일을 앱이 인식하도록 경로를 적어줍니다.
+  assets:
+    - assets/models/yolo.tflite
+    - assets/models/labels.txt
